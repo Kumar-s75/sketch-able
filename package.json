@@ -1,0 +1,21 @@
+{
+  "name": "draw-app",
+  "private": true,
+  "scripts": {
+    "build": "turbo build",
+    "db:generate": "pnpm --filter @repo/db exec prisma generate",
+    "dev": "turbo dev",
+    "lint": "turbo lint",
+    "test": "pnpm --dir packages/common run test && pnpm --dir apps/ws-backend run test",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "devDependencies": {
+    "prettier": "^3.2.5",
+    "turbo": "^2.3.3",
+    "typescript": "5.5.4"
+  },
+  "packageManager": "pnpm@9.0.0",
+  "engines": {
+    "node": ">=18"
+  }
+}
