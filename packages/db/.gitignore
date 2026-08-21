@@ -1,3 +1,7 @@
 node_modules
-# Keep environment variables out of version control
+dist
+
+# Keep environment variables out of version control (keep env.example if added)
 .env
+.env.*
+!.env.example
